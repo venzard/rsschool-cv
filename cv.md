@@ -12,7 +12,7 @@ I want to get professional skills in frontend development. I think this area is 
 - Python
 
 ## Code examples:
-```
+```python
 def main(): 
     driver = webdriver.Chrome()
     driver.get("https://vk.com/")
