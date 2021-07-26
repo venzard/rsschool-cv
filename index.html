@@ -9,13 +9,101 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <section class="sidebar">
-
-        </section>
+        <div class="sidebar">
+            <div class="photo">
+                <img src="assets/photo.jpg" alt="photo"/>
+            </div>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                </ul>
+            </section> 
+            <section class="education">
+                <h2>Education</h2>
+                <h3>Moscow Aviation Institute </h3>
+                    <p>Faculty No. 3 "Control Systems, Informatics and Power Engineering", Graduate, 2017.</p>
+            </section>
+            <section>
+                <h2>Work</h2>
+                <p>I work in sap consulting.</p>
+            </section>
+            <section class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (B1)<img src="assets/eng.png" style="width: 1.5em;" alt="logo"></li>
+                    <li>Russian (native)<img src="assets/rus.png" style="width: 1.5em" alt="logo"></li>
+                </ul>
+            </section>
+        </div>
         <main>
-            
+            <header>
+                <h1>Vasily Cherevko</h1>
+            </header>
+            <section class="summary">
+                <h2>Short info</h2>
+                <p>
+                    I want to get professional skills in frontend development. I think this area is interesting and promising.
+                </p>
+            </section>
+            <section class="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><a href="https://discordapp.com/users/Venzard2370/" target="_blank"> <img src="assets/discord.png" style="width: 24px" alt="logo">Discord:</a> Venzard#2370</li>
+                    <li><a href="https://github.com/venzard" target="_blank"> <img src="assets/github.png" style="width: 24px" alt="logo">Github:</a> venzard</li>
+                    <li><a href="https://t.me/Venzard" target="_blank"> <img src="assets/telegram.png" style="width: 24px" alt="logo">Telegram:</a> Venzard</li>
+                    <li><a href="https://www.google.com/maps/place/stary+oskol" target="_blank"> <img src="assets/map.png" style="width: 24px" alt="logo">Location:</a> Stary Oskol, Russia </li>
+                </ul>
+            </section>
+            <section class="code_example">
+                <h2>Code example</h2>
+                <pre><code class="code">
+                    def main(): 
+                    driver = webdriver.Chrome()
+                    driver.get("https://vk.com/")
+                    driver.set_window_size(1920, 1024) 
+                    usernameForm = driver.find_element_by_id("index_email")
+                    usernameForm.send_keys('login_vk')
+                    passwordForm = driver.find_element_by_id("index_pass")
+                    passwordForm.send_keys('pass_vk')
+                    loginButton = driver.find_element_by_id('index_login_button')                                       
+                    loginButton.click()                                                                            
+                #open
+                    driver.get("https://vk.com/album"id"_000") 
+                    time.sleep(2.5) 
+                    driver.find_element_by_class_name("photos_row ").click()
+                    time.sleep(2.5) 
+                #like
+                    for i in range(0, 40): //photo count
+                        driver.find_element_by_class_name("like_button_icon").click()
+                #next
+                        select = driver.find_element_by_class_name("pv_fs_wrap")
+                        ActionChains(driver).move_to_element_with_offset(select, 0, 150).click().perform()
+                        time.sleep(0.5)
+                        print(i)
+                    driver.find_element_by_class_name("pv_close_btn").click()
+                    time.sleep(2.5)
+                    driver.quit()
+                if __name__ == "__main__":
+                        main()  
+                </code></pre>
+            </section>   
         </main>
     </div>
-    
-</body>
+    <footer class="footer">
+        <div>
+          <p>2021 &copy; Vasily Cherevko</p>
+          <a class="footer_git" href="https://github.com/venzard" target="_blank">
+            <img src="assets/github.png" style="width: 50px" alt="logo">
+         </a>
+        </div>
+        <div>
+          <a class="rsschool-logo" href="https://rs.school/js/" target="_blank">
+            <img src="assets/rs_school_js.svg" style="width: 50px" alt="rsschoollogo" />
+          </a>
+        </div>
+      </footer>
+    </body>
 </html>
