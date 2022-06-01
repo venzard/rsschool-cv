@@ -1,11 +1,11 @@
 *{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 .sidebar{
     align-items: center;
     width: 32%;
-    background-color: rgb(45, 45, 45);
-    color: white;
+    background-color: #dd9f65;
+    color: rgb(0, 0, 0);
 }
 .page-wrapper{
     display: flex;
@@ -16,15 +16,13 @@
 .photo{
     display: flex;
     align-items: center;
-    padding-top: 15px;
 }
 .image{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    border-radius: 50%;
-    border: 5px solid white;
+    width: 100%;
+
 }
 .code{
     font-family: verdana;
@@ -33,13 +31,18 @@
 .footer {
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+.footer img{
+    height: 20px;
+    vertical-align: sub;
 }
 .rsschool-logo{
     margin-left: auto;
     display: block;
 }
 body{
-    background-color: gray;
+    background-color: rgb(226, 213, 213);
 }
 .skills{
     margin-left: auto;
@@ -56,7 +59,33 @@ h2,h3{
 }
 main{
     width: 68%;
+    background-color: #f7e7ce ;
+    padding: 20px;
 }
 .code{
     font-size: 82%;
+}
+
+section{
+    padding: 20px;
+}
+
+.contacts li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.contacts img{
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+}
+
+.languages img{
+    width: 25px;
+    vertical-align: sub;
+}
+.languages li{
+    margin-bottom: 10px;
+    list-style: none;
 }
